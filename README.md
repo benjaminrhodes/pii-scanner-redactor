@@ -4,15 +4,35 @@ Detect and redact PII in datasets
 
 ## Features
 
-- Feature 1
-- Feature 2
-- Feature 3
+- Detect PII types: SSN, email, phone, addresses
+- Redact detected PII with placeholder markers
+- CLI interface for scanning and redacting files
+- Supports multiple text formats
+
+## Installation
+
+```bash
+pip install -e .
+```
 
 ## Usage
 
+### Scan a file for PII
+
 ```bash
-pip install pii-scanner-redactor
-python -m src.cli
+python -m src.cli scan path/to/file.txt
+```
+
+### Redact PII from a file
+
+```bash
+python -m src.cli redact path/to/file.txt
+```
+
+### Redact and save to output file
+
+```bash
+python -m src.cli redact path/to/file.txt -o output.txt
 ```
 
 ## Testing
@@ -20,11 +40,6 @@ python -m src.cli
 ```bash
 pytest tests/ -v
 ```
-
-## Security
-
-- Uses synthetic/test data only
-- No real credentials or production systems
 
 ## License
 
