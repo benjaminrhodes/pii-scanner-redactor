@@ -77,6 +77,11 @@ Customer Jane Doe can be reached at [EMAIL] or [PHONE].
 Synthetic SSN for testing: [SSN].
 ```
 
+## Use Cases and Explainer
+
+- [Example use cases](docs/use-cases.md): log sharing, pre-commit data hygiene, and incident-triage sanitization.
+- [60-second explainer script](docs/explainer-script.md): a ready-to-record script, shot list, and LinkedIn caption.
+
 ## Testing
 
 ```bash
