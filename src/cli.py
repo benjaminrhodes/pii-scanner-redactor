@@ -1,9 +1,9 @@
 """CLI interface."""
+from __future__ import annotations
 
 import argparse
 import sys
 from pathlib import Path
-from typing import Optional
 
 from src.detector import detect_pii
 from src.redactor import redact_text
@@ -40,10 +40,10 @@ def redact_file(filepath: str) -> str:
     return redacted
 
 
-def main(argv: Optional[list] = None) -> int:
+def main(argv: list | None = None) -> int:
     """Main CLI entry point."""
     if argv is None:
-        argv = []
+        argv = sys.argv[1:]
     parser = argparse.ArgumentParser(
         description="PII Scanner and Redactor - Detect and redact PII from text files"
     )

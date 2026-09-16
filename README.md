@@ -51,7 +51,7 @@ EOF
 Scan for PII:
 
 ```bash
-python -m src.cli scan sample.txt
+pii-scanner scan sample.txt
 ```
 
 Example output:
@@ -66,7 +66,7 @@ sample.txt:
 Redact PII:
 
 ```bash
-python -m src.cli redact sample.txt -o redacted.txt
+pii-scanner redact sample.txt -o redacted.txt
 cat redacted.txt
 ```
 

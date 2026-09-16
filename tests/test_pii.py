@@ -1,7 +1,7 @@
 """Tests for PII scanner and redactor."""
 
-from src.detector import detect_pii, PIIType
-from src.redactor import redact_text, redact_pii
+from src.detector import PIIType, detect_pii
+from src.redactor import redact_pii, redact_text
 
 
 class TestPIIType:

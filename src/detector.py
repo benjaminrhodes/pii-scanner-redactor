@@ -3,7 +3,6 @@
 import re
 from dataclasses import dataclass
 from enum import Enum
-from typing import List
 
 
 class PIIType(Enum):
@@ -30,7 +29,7 @@ ADDRESS_PATTERN = re.compile(
 )
 
 
-def detect_pii(text: str) -> List[PIIDetection]:
+def detect_pii(text: str) -> list[PIIDetection]:
     """Detect PII in text."""
     results = []
 

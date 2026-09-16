@@ -1,6 +1,6 @@
 """Tests for CLI interface."""
 
-from src.cli import main, scan_file, redact_file
+from src.cli import main, redact_file, scan_file
 
 
 class TestCLI:
